@@ -1,7 +1,33 @@
 function isPalindrome(str){
-    /* Seu código aqui */
+    str = str.toLowerCase();
+    str = str.replace(/\s/g, '');
+    let result1 = "";
+    let result2 = "";
+    for(let i=0;i<str.length;i++){
+        result1 += str[i];
+    }
+    for(let i=str.length-1;i>=0;i--){
+        result2 += str[i];
+    }
+    if(result1 == result2){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 function arrayMaxMin(arr){
-    /* Seu código aqui */
+    let min = 0;
+    let max = 0;
+    let result = [];
+    for(i=0;i<arr.length;i++){
+        if(arr[i] == Math.min(...arr)){
+            min += arr[i];
+        }
+        if(arr[i] == Math.max(...arr)){
+            max += arr[i];
+        }
+    }
+    result = [min,max];
+    return result;
 }
