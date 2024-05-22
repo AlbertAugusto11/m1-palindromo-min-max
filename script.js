@@ -20,7 +20,7 @@ function arrayMaxMin(arr){
     let min = 0;
     let max = 0;
     let result = [];
-    for(i=0;i<arr.length;i++){
+    for(let i=0;i<arr.length;i++){
         if(arr[i] == Math.min(...arr)){
             min += arr[i];
         }
