@@ -15,6 +15,7 @@ function isPalindrome(str){
         return false;
     }
 }
+// Só Precisava usar o for para ler de tras para frente e veficicar se é igual a "str"
 
 function arrayMaxMin(arr){
     let min = 0;
